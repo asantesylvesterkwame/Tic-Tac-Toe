@@ -1,4 +1,114 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');body{
     background-color: rgb(255, 255, 255);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lato','Arial Narrow Bold', sans-serif;
+}
+#mainBoard{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 1px solid rgb(131, 131, 131);
+    width: 50%;
+    height: 20em;
+    border-radius: 8px;
+    /* padding: 1%; */
+}
+#mainBoardDiv{
+    display: flex;
+    justify-content: center;
+}
+select {
+    font-size: 14px;
+    border: none;
+    border-bottom: 2.5px solid black;
+    background: #FFFAFA;
+}
+#gamePlayDetailsDiv{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+#XplayerBtnDiv{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 40%;
+    
+}
+#XplayerBtn{
+    width: 100%;
+    border-radius: 50px;
+    padding: 2%;
+    font-size: larger;
+    border: 0.1px solid rgba(0, 0, 0, 0.199);
+}
+#XplayerBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.25s ease-in-out;
+}
+#XplayerBtn:focus{
+    border: 2px solid #28282B;
+    transition: 0.25 ease-in-out;
+}
+#gamePlayButtonO{
+    display: flex;
+    justify-content: center;
+}
+#OmainDiv{
+    display: flex;
+    justify-content: center;
+}
+#gamePlayButtonODiv{
+    width: 40%;
+}
+#OplayerButton{
+    width: 100%;
+    border-radius: 50px;
+    padding: 2%;
+    font-size: larger;
+    border: 0.1px solid rgba(0, 0, 0, 0.233);
+}
+#OplayerButton:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.25s ease-in-out;
+}
+#OplayerButton:focus{
+    border: 2px solid #28282B;
+    transition: 0.25 ease-in-out;
+}
+#gameBoard{
+    border: 1px solid black;
+    /* height: 50%; */
+    width: auto;
+    /* border-radius: 8px; */
+    background-color: #28282B;
+    color: 	#FFFAFA;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10%;
+}
+#selectMenu{
+    padding: 2%;
+}
+#RestartButton{
+    width: 100%;
+    padding: 5%;
+    font-size: 24px;
+    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    background-color: 	#006400;
+    color: 	#FFFAFA;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+.gameBoardInput{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 50%;
+    font-size: 24px;
+    border-left: none;
+    border-bottom: none;
+}
+.third{
+    border-right: none;
+}
+.first{
+    border-top: none;
 }
