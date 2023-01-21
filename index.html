@@ -7,9 +7,48 @@
     <title>TIC-TAC-TOE KINGDOM</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+
 </head>
 <body>
-    
+    <div id="mainBoardDiv">
+        <div id="mainBoard">
+        <div id="selectMenu">
+            <select name="Level" id="gameLevel">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+                <option value="unbeatable">Unbeatable</option>
+            </select>
+            </div>
+            <br>
+            <div id="gamePlayDetailsDiv">
+                <div
+                id="XplayerBtnDiv"><input type="button" value="X" id="XplayerBtn"></div>
+            </div>
+            <br>
+            <div id="OmainDiv">
+            <div id="gamePlayButtonODiv">
+                <input type="button" value="O" id="OplayerButton">
+            </div>
+        </div>
+        <br>
+        <div id="gameBoard">
+            <div class="gameBoardInput first">1</div>
+            <div class="gameBoardInput first">2</div>
+            <div class="gameBoardInput third first">3</div>
+            <div class="gameBoardInput ">4</div>
+            <div class="gameBoardInput ">5</div>
+            <div class="gameBoardInput third">6</div>
+            <div class="gameBoardInput">7</div>
+            <div class="gameBoardInput">8</div>
+            <div class="gameBoardInput third">9</div>
+        </div>
+        <div>
+            <input type="button" value="Restart" id="RestartButton">
+        </div>
+        </div>
+     </div>
+</div>
 
     <script src="app.js" ></script>
 </body>
