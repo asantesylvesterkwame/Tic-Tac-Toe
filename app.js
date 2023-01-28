@@ -79,7 +79,83 @@ for (let i = 0; i < gameBoardInput.length; i++) {
         }
       }
     }
-
+    if (gameBox1.innerHTML === "X") {
+      if (gameBox5.innerHTML === "X") {
+        if (gameBox9.innerHTML === "X") {
+          console.log('X Wins');
+        }
+      }
+    }
+    if (gameBox1.innerHTML === "O") {
+      if (gameBox5.innerHTML === "O") {
+        if (gameBox9.innerHTML === "O") {
+          console.log('O Wins');
+        }
+      }
+    }
+    if (gameBox3.innerHTML === "X") {
+      if (gameBox5.innerHTML === "X") {
+        if (gameBox7.innerHTML === "X") {
+          console.log('X Wins');
+        }
+      }
+    }
+    if (gameBox3.innerHTML === "X") {
+      if (gameBox5.innerHTML === "X") {
+        if (gameBox7.innerHTML === "X") {
+          console.log('X Wins');
+        }
+      }
+    }
+    if (gameBox3.innerHTML === "O") {
+      if (gameBox5.innerHTML === "O") {
+        if (gameBox7.innerHTML === "O") {
+          console.log('O Wins');
+        }
+      }
+    }
+    if (gameBox1.innerHTML === "X") {
+      if (gameBox4.innerHTML === "X") {
+        if (gameBox7.innerHTML === "X") {
+          console.log('X Wins');
+        }
+      }
+    }
+    if (gameBox1.innerHTML === "O") {
+      if (gameBox4.innerHTML === "O") {
+        if (gameBox7.innerHTML === "O") {
+          console.log('O Wins');
+        }
+      }
+    }
+    if (gameBox2.innerHTML === "X") {
+      if (gameBox5.innerHTML === "X") {
+        if (gameBox8.innerHTML === "X") {
+          console.log('X Wins');
+        }
+      }
+    }
+    if (gameBox2.innerHTML === "O") {
+      if (gameBox5.innerHTML === "O") {
+        if (gameBox8.innerHTML === "O") {
+          console.log('O Wins');
+        }
+      }
+    }
+    if (gameBox3.innerHTML === "X") {
+      if (gameBox6.innerHTML === "X") {
+        if (gameBox9.innerHTML === "X") {
+          console.log('X Wins');
+        }
+      }
+    }
+    if (gameBox3.innerHTML === "O") {
+      if (gameBox6.innerHTML === "O") {
+        if (gameBox9.innerHTML === "O") {
+          console.log('O Wins');
+        }
+      }
+    }
   });
 
 
