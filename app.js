@@ -3,37 +3,32 @@
 // }
 
 
-let gameLevel = document.querySelector('#gameLevel');
+let gameBoardInput = document.querySelectorAll('.gameBoardInput');
+let currentPlayer = "X";
 
-function logValue() {
-    console.log(gameLevel.value);
+let gameRuleBoard = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+]
+
+for (let i = 0; i < gameBoardInput.length; i++) {
+    gameBoardInput[i].addEventListener('click', function(event) {
+    event.target.innerHTML = currentPlayer;
+      if (currentPlayer != '') return;
+    if (currentPlayer === "X") {
+      currentPlayer = "O";
+    } else {
+      currentPlayer = "X";
+    }
+  });
 }
 
-let xPlayerButton = document.getElementById('XplayerBtn');
 
-let oPlayerButton = document.getElementById('OplayerButton');
-
-let gameBoardInput = document.querySelectorAll('.gameBoardInput');
-xPlayerButton.addEventListener('click', function () {
-    let xButtonName = xPlayerButton.name = 'Xfocused';
-    console.log(xButtonName);
-    let oButtonName = oPlayerButton.name = '';
-    console.log(oButtonName);
-    if (gameLevel.value === 'easy') {
-        if (xButtonName === 'Xfocused') {
-            gameBoardInput.addEventListener('click', function () {
-                gameBoardInput.innerHTML = 'X'
-            })
-        }
-    }
-});
-
-oPlayerButton.addEventListener('focus', function () {
-    let xButtonName = xPlayerButton.name = '';
-    console.log(xButtonName);
-    let oButtonName = oPlayerButton.name = 'Ofocused';
-    console.log(oButtonName);
-    
-});
 
 
