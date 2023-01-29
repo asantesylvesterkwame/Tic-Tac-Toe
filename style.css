@@ -3,14 +3,16 @@ body{
     background-color: rgb(255, 255, 255);
     font-family: 'Lato','Arial Narrow Bold', sans-serif;
     height: 50vh;
+    transition: 1s ease-in-out;
 }
 #mainBoard{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border: 1px solid rgb(131, 131, 131);
-    width: 50%;
+    width: 500px;
     height: 20em;
     border-radius: 8px;
     /* padding: 1%; */
+    transition: 1s ease-in-out;
 }
 #mainBoardDiv{
     display: flex;
@@ -99,6 +101,11 @@ select {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: none;
 }
+#RestartButton:hover{
+    background-color: #AA0000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.25s ease-in-out;
+}
 
 #RestartButton>a{
     text-decoration: none;
@@ -112,6 +119,8 @@ select {
     font-size: 24px;
     border-left: none;
     border-bottom: none;
+    font-size: 5rem;
+    transition: 0.25s ease-in-out;
 }
 .third{
     border-right: none;
@@ -119,4 +128,48 @@ select {
 .first{
     border-top: none;
 }
+#win-message{
+    background-color: rgba(0, 0, 0, 0.795);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFAFA;
+}
+#win-message-div{
+    margin-top: 50vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#win-message-div>h1{
+    font-size: 5rem;
+}
+#play-again-button{
+    color: black;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #AA0000;
+    border: none;
+    color: #FFFAFA;
+    font-family: 'Lato','Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+#play-again-button:hover{
+    background-color: #006400;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
 
+}
+#play-again-button>a{
+    text-decoration: none;
+    color: #FFFAFA;
+}
