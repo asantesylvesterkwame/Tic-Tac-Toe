@@ -34,7 +34,8 @@ let winMessagePopUp = document.getElementById('win-message');
 let winMessageText = document.getElementById('win-message-text');
 
 for (let i = 0; i < gameBoardInput.length; i++) {
-    gameBoardInput[i].addEventListener('click', function(event) {3
+    gameBoardInput[i].addEventListener('click', 
+    function(event) {
       event.target.innerHTML = currentPlayer;
       
     if (currentPlayer === "X") {
@@ -218,7 +219,7 @@ for (let i = 0; i < gameBoardInput.length; i++) {
         }
       }
     }
-  });
+  }, {once: true});
   
 
   
